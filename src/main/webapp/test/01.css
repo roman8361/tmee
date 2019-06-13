@@ -1,0 +1,44 @@
+/*
+ * Off Canvas navbar toggle right
+ * --------------------------------------------------
+ */
+
+@media screen and (max-width: 768px) {
+    .row-offcanvas .collapsing {
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .row-offcanvas .navbar {
+        position: absolute;
+        z-index: 2;
+        left:0;
+        height:100%;
+        width:55px;
+        border:0;
+        background-color:transparent;
+    }
+    .row-offcanvas .navbar-toggle {
+        margin-right: 0;
+    }
+    .row-offcanvas {
+        position: relative;
+    }
+    .row-offcanvas-left.active .navbar {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        width:40%;
+        background-color:#eee;
+        border:0 solid #ddd;
+        border-left-width:1px;
+    }
+    .row-offcanvas-left.active {
+
+    }
+    .row-offcanvas-left.active .navbar-collapse {
+        position: relative;
+        width: 100%;
+    }
+
+}
